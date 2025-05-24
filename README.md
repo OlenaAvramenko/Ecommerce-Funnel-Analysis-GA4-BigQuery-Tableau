@@ -1,40 +1,71 @@
-# Ecommerce-Funnel-Analysis-GA4-BigQuery-Tableau
-Objective: The goal of this project was to analyze an ecommerce conversion funnel using data from GA4 exported to BigQuery. I designed and built a full pipeline — from SQL queries and data cleaning to interactive visualizations in Tableau
+# 📈 Ecommerce Funnel Analysis  
 
-## Tasks completed:
-🔹 Extracted key session parameters (device, country, traffic source, etc.) and funnel events (view item, add to cart, checkout, purchase) using SQL
+![Ecommerce Funnel Cover](ecommerce_funnel_cover.png)
 
-🔹 Built a proper session-event join logic in BigQuery to preserve all sessions and avoid data loss
+**Tools used:** GA4 | BigQuery | SQL | Tableau  
 
-🔹 Cleaned and exported the data to CSV (handled format issues and datatype bugs)
+---
 
-🔹 Designed a Tableau dashboard with filters by country, language, device, campaign, and landing page
+## 📌 Project Goal  
+Analyze user behavior and the conversion funnel in an online store using data exported from Google Analytics 4 (GA4) to BigQuery. Identify key drop-off points and provide actionable insights through interactive dashboards.
 
-🔹 Created key KPI tiles, a visualized funnel, maps, and segmentation charts
+---
 
-## Key features:
-📊 Interactive dashboard:
+## 🔧 My Role  
+**Full-cycle Data Analyst**  
+✔️ Wrote SQL queries in BigQuery to extract session and funnel data  
+✔️ Cleaned and prepared data for visualization  
+✔️ Built an interactive dashboard in Tableau  
 
-Conversion funnel
+---
 
-KPI tiles (sessions, orders, purchases, conversion rate)
+## 🔍 Steps performed  
 
-Traffic source and campaign analysis
+1. **Data extraction in BigQuery**  
+   - Collected session metadata: traffic source, device type, country  
+   - Extracted funnel events: session_start, view_item, add_to_cart, begin_checkout, purchase  
 
-Country/language/device segmentation
+2. **JOIN logic**  
+   - Merged event and session data using `LEFT JOIN` on `user_session_id`  
+   - Ensured that no sessions were lost due to join direction
 
-Purchase heatmap by country
+3. **Data cleaning**  
+   - Exported to `.csv` format  
+   - Fixed formatting issues via Google Sheets (separated columns, preserved text formats)
 
-Flexible filters for advanced analysis
+4. **Visualization in Tableau**  
+   - KPI Tiles: Sessions, Orders, Purchases, Conversion Rate  
+   - Funnel chart  
+   - Segmentations: Country, Language, Device, Campaign  
+   - Purchase heatmap  
+   - Date and source filters for dynamic analysis  
 
-## Target user:
-Digital marketer who needs fast insights into traffic performance and conversion behavior.
+---
 
-## 🔗 Live dashboard:
-https://public.tableau.com/app/profile/olena.avramenko4187/viz/Project1_AvramenKo/E-commerceFunnel?publish=yes
+## 📊 Features  
 
-## 🔗 Video presentation
-https://youtu.be/GLhHc8xhgt4
+- ✅ Visualized conversion funnel  
+- 🌍 Segmentation by device, language, country, and campaign  
+- 🎯 Campaign performance overview  
+- 📆 Dynamic filtering for advanced analysis  
 
-## 🔗 BigQuery
-https://console.cloud.google.com/bigquery?sq=446921047291:585c6e57fc614e66a9949228b4fe9b58&inv=1&invt=AbyQjw&project=eloquent-drive-438416-i3&ws=!1m4!1m3!8m2!1s446921047291!2s585c6e57fc614e66a9949228b4fe9b58
+---
+
+## 👤 Target User  
+
+> **Mark**, a Digital Marketer  
+> Needs fast and flexible insights into the sales funnel, ad performance, and user behavior to optimize marketing efforts.
+
+---
+
+## 🔗 Resources
+
+- 📊 **[Live Tableau Dashboard](https://public.tableau.com/app/profile/olena.avramenko4187/viz/Project1_AvramenKo/E-commerceFunnel?publish=yes)**
+- 🎥 **[Video Presentation](https://youtu.be/GLhHc8xhgt4)**
+- 🧠 **[BigQuery SQL Script](https://console.cloud.google.com/bigquery?sq=446921047291:585c6e57fc614e66a9949228b4fe9b58&project=eloquent-drive-438416)**  
+
+---
+
+## 🙏 Special Thanks  
+
+To my mentor **Edward**, and the amazing GoIT team – this journey was both insightful and fun 💚
