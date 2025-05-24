@@ -3,9 +3,13 @@ Objective: The goal of this project was to analyze an ecommerce conversion funne
 
 ## Tasks completed:
 🔹 Extracted key session parameters (device, country, traffic source, etc.) and funnel events (view item, add to cart, checkout, purchase) using SQL
+
 🔹 Built a proper session-event join logic in BigQuery to preserve all sessions and avoid data loss
+
 🔹 Cleaned and exported the data to CSV (handled format issues and datatype bugs)
+
 🔹 Designed a Tableau dashboard with filters by country, language, device, campaign, and landing page
+
 🔹 Created key KPI tiles, a visualized funnel, maps, and segmentation charts
 
 ## Key features:
